@@ -1,0 +1,27 @@
+{
+  "name": "Flutter - HBO Max Clone",
+  "image": "ghcr.io/cirruslabs/flutter:stable",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "forwardPorts": [8080],
+  "postCreateCommand": "cd hbomax_clone && flutter pub get",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Dart-Code.dart-code",
+        "Dart-Code.flutter",
+        "usernamehw.errorlens",
+        "PKief.material-icon-theme"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "Dart-Code.dart-code",
+        "[dart]": {
+          "editor.defaultFormatter": "Dart-Code.dart-code"
+        }
+      }
+    }
+  },
+  "remoteUser": "root"
+}
